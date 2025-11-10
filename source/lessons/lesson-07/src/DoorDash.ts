@@ -72,7 +72,7 @@ screen.key(['o'], async () => {
         });
 
         // Wait for all promises to resolve
-        const results = await Promise.allSettled(promises);
+        const results = await Promise.race(promises);
 
         let summaryMessage = 'Successfully delivered:\n*****************\n';
         let summaryTitle = 'Status: Complete';
@@ -122,10 +122,5 @@ screen.key(['o'], async () => {
 
 // Exit the program.
 screen.key(['q', 'C-c'], () => process.exit(0));
-
-
-
-
-
 
 
