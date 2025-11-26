@@ -1,0 +1,23 @@
+{
+  "name": "stinky-library-system",
+  "version": "1.0.0",
+  "description": "A deliberately bad library management system for refactoring practice",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["refactoring", "code-smells", "education"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.10.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.9.3"
+  }
+}
